@@ -1,0 +1,62 @@
+:root {
+  /* Global Colors */
+  --primary-color: #4f46e5; /* Indigo */
+  --secondary-color: #22c55e; /* Emerald Green */
+  --background-color: #f3f4f6; /* Light Gray */
+  --card-background: #ffffff; /* White */
+  --text-color-dark: #1e293b; /* Dark Gray */
+  --text-color-light: #ffffff; /* White */
+
+  /* Font and Spacing */
+  --font-family: 'Inter', sans-serif;
+  --border-radius: 12px;
+  --box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  height: 80px;
+  margin: 20px auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px var(--primary-color));
+}
+
+.card {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
